@@ -31,7 +31,7 @@ void setup() {
     });
 
     server.on("/scripts.js", HTTP_GET, [](AsyncWebServerRequest *request){
-        request->send(LittleFS, "/scripts.js", "text/js");
+        request->send(LittleFS, "/scripts.js", "text/javascript");
     });
 
     server.on("/style.css", HTTP_GET, [](AsyncWebServerRequest *request){
