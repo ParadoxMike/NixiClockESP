@@ -1,0 +1,39 @@
+html {
+   font-size: 14px;
+   line-height: 1.4em;
+   box-sizing: border-box;
+   -ms-overflow-style: scrollbar;
+   
+   @include media-breakpoint-up(sm) {
+      font-size: 16px;
+   }
+}
+
+*, *:before, *:after {
+   box-sizing: inherit;
+}
+
+body {
+   position: relative;
+   overflow-x: hidden;
+}
+
+figure {
+   margin: 0;
+
+   img {
+      width: 100%;
+      height: auto;
+   }
+}
+
+ul,
+ol {
+   padding-left: 0;
+   margin: 0;
+   list-style: none;
+}
+
+.row {
+   --bs-gutter-x: 3rem; //modify spacing between bootstrap cols
+}

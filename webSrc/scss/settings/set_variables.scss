@@ -1,0 +1,172 @@
+/******************************************************************
+	COLORS
+******************************************************************/
+
+// grayscale
+$c-black: #000000;
+// $c-transparent-black: rgba(0, 0, 0, 0.8);
+$c-white: #ffffff;
+$c-gray: #262626;
+$c-light-gray: #dedede;
+
+// project
+$c1-main: #009a0f;
+$c2-main: #099053;
+
+// usage text: .t-c1-main,...
+// usage background: .bg-c1-main,...
+$theme-colors: () !default;
+$theme-colors: map-merge(
+   (
+      "c-black": $c-black,
+      // "c-transparent-black": $c-transparent-black,
+      "c-white": $c-white,
+      "c-gray": $c-gray,
+      "c-light-gray": $c-light-gray,
+      "c1-main": $c1-main,
+      "c2-main": $c2-main,
+   ),
+   $theme-colors
+);
+
+
+/******************************************************************
+   FONTS
+******************************************************************/
+
+$f-regular: "FiraCodeRegular", monospace;
+
+/******************************************************************
+   BORDER
+******************************************************************/
+
+// border-radius
+$bd-radius-3: 3px;
+$bd-radius-5: 5px;
+$bd-radius-25: 25px;
+$bd-radius-round: 50%;
+
+// border-width
+$bd-width-1: 1px;
+$bd-width-2: 2px;
+$bd-width-3: 3px;
+$bd-width-4: 4px;
+
+//complete borders
+// $bd-brackets: 2rem solid $c-light-gray;
+
+/******************************************************************
+   TRANSITIONS_TIMING
+******************************************************************/
+
+$transition-150: 0.15s;
+$transition-300: 0.3s;
+$transition-500: 0.5s;
+
+/******************************************************************
+   GRADIENTS
+******************************************************************/
+
+$gradient-bg: linear-gradient(160deg, $c1-main 0%, $c2-main 81%);
+
+/******************************************************************
+   SHADOWS
+******************************************************************/
+
+
+/******************************************************************
+   SPACERS
+******************************************************************/
+
+//general spacings
+$content-container-margin-tb: 2rem;
+$content-container-margin-lr: 3rem;
+
+// https://getbootstrap.com/docs/4.1/utilities/spacing/
+$spacer: 1rem !default;
+$spacers: () !default;
+$spacers: map-merge(
+   (
+      0: 0,
+      25: (
+         $spacer * 0.25,
+      ),
+      50: (
+         $spacer * 0.5,
+      ),
+      75: (
+         $spacer * 0.75,
+      ),
+      100: (
+         $spacer * 1,
+      ),
+      125: (
+         $spacer * 1.25,
+      ),
+      150: (
+         $spacer * 1.5,
+      ),
+      200: (
+         $spacer * 2,
+      ),
+      250: (
+         $spacer * 2.5,
+      ),
+      300: (
+         $spacer * 3,
+      ),
+      350: (
+         $spacer * 3.5,
+      ),
+      400: (
+         $spacer * 4,
+      ),
+      450: (
+         $spacer * 4.5,
+      ),
+      500: (
+         $spacer * 5,
+      ),
+      600: (
+         $spacer * 6,
+      ),
+      800: (
+         $spacer * 8,
+      ),
+      1000: (
+         $spacer * 10,
+      ),
+      1200: (
+         $spacer * 12,
+      ),
+      1500: (
+         $spacer * 15,
+      ),
+      1800: (
+         $spacer * 18,
+      ),
+      grid: (
+         $spacer * 2,
+      ),
+   ),
+   $spacers
+);
+
+
+/******************************************************************
+   GRID
+   https://getbootstrap.com/docs/4.1/layout/overview/#responsive-breakpoints
+******************************************************************/
+
+// Grid breakpoints
+// @USAGE: @include media-breakpoint-up(sm) {}
+// @USAGE: @include media-breakpoint-down(sm) {}
+// @USAGE: @include media-breakpoint-only(sm) {}
+// @USAGE: @include media-breakpoint-between(md, xl) {}
+$grid-breakpoints: (
+   xs: 0,
+   sm: 481px,
+   md: 961px,
+   lg: 1461px,
+   xl: 1901px,
+) !default;

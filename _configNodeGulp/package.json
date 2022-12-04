@@ -1,0 +1,12 @@
+{
+  "name": "scss_with_gulp",
+  "version": "1.0.0",
+  "description": "runs gulp to compile scss",
+  "author": "Mike Blank",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-sass": "^5.1.0",
+    "sass": "^1.56.1"
+  }
+}

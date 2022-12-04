@@ -1,0 +1,21 @@
+@mixin text-color-classes($parent, $color) {
+   #{$parent} {
+     color: $color !important;
+   }
+ }
+ 
+ @mixin background-color-classes($parent, $color) {
+   #{$parent} {
+     background: $color !important;
+   }
+ }
+
+// usage: .t-c1-main
+@each $color, $value in $theme-colors {
+   @include text-color-classes(".t-#{$color}", $value);
+}
+
+// usage: .bg-c1-main
+@each $color, $value in $theme-colors {
+   @include background-color-classes(".bg-#{$color}", $value);
+}

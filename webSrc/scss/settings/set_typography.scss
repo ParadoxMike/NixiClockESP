@@ -1,0 +1,10 @@
+/* fira-code-regular - latin-ext_latin_greek */
+@font-face {
+font-family: 'FiraCodeRegular';
+font-style: normal;
+font-weight: 400;
+src: local(''),
+     url('./fonts/fira-code-regular.woff2') format('woff2'), /* Super Modern Browsers */
+     url('./fonts/fira-code-regular.woff') format('woff'), /* Modern Browsers */
+     url('./fonts/fira-code-regular.ttf') format('truetype') /* Safari, Android, iOS */
+}
